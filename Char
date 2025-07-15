@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char input[1000], output[1000];
+    int i = 0, j = 0;
+
+    
+    fgets(input, sizeof(input), stdin);
+
+  
+    while (input[i] != '\0') {
+        if (input[i] != ' ') {
+            output[j++] = input[i];
+        }
+        i++;
+    }
+    output[j] = '\0'; 
+
+  
+    printf("%s", output);
+
+    return 0;
+}
